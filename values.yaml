@@ -1,0 +1,15 @@
+image:
+  repository: cubbit/agent
+  tag: latest
+  pullPolicy: Always
+
+port: 4000
+
+# EDIT THIS
+swarm:
+  agents:
+  - name: agent1
+    secret: secret1
+    machineId: machineId1
+    nodeName: node1
+    storage: 100G
